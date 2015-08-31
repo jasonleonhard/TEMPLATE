@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+# ADDED
+# group :assets do 
+  # USING LESS
+  # https://github.com/seyhunak/twitter-bootstrap-rails replacing with LESS
+  # http://railscasts.com/episodes/328-twitter-bootstrap-basics?view=asciicast
+  # http://www.w3schools.com/bootstrap/bootstrap_buttons.asp
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails" # rails g bootstrap:install
