@@ -1,34 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# db/seeds.rb impliments the faker gem to seed the db
+  # gem 'faker'
 
+# Working:
 require 'faker'
-include Faker
+require 'populator'
 
-100.times do
-  article = Article.create( :title => Faker::Name.title, #=> "Legacy Creative Director",
-                            :body => Faker::Lorem.sentence #=> 
-                            # :body => Faker::Lorem.sentence(5) #=> 
-                          )
+1000.times do
+  article = Article.create( 
+    :title => Faker::Name.title, #=> "Legacy Creative Director",
+    :body => Faker::Lorem.sentence(11) #=> Corporis iusto vel reiciendis ut tenetur qui eos officiis rerum at consectetur.  
+  )
   puts article.inspect
 end
 # rake db:reset db:migrate db:seed
-
-
-# below worked:
-
-# require 'faker'
-# include Faker
-
-# 100.times do
-#   article = Article.create( :title => "Example Title: #{1..100}",
-#                             :body => 'Body of knowlege'
-#                           )
-#   puts article.inspect
-# end
-# # rake db:reset
-# # rake db:seed
+# rake db:reset db:migrate db:seed --trace
+# https://github.com/stympy/faker
