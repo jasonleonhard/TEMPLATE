@@ -1,28 +1,12 @@
-== README
+# Rails Article Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Example showing 
 
-Things you may want to cover:
+    gem "therubyracer"
+    gem "less-rails"
+    gem "twitter-bootstrap-rails" # rails g bootstrap:install
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Views
+  Articles
+  Layouts
+  Partials
