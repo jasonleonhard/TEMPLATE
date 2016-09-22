@@ -28,10 +28,6 @@ gem "twitter-bootstrap-rails" # rails g bootstrap:install
 gem 'faker'
 gem 'populator'
 
-gem "therubyracer"
-gem "less-rails"
-gem "twitter-bootstrap-rails" # rails g bootstrap:install
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
