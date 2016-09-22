@@ -1,12 +1,14 @@
-# Rails Article Application
+# Rails Article Application with demo data via seed.rb
 
 ## Example showing 
 
     gem "therubyracer"
     gem "less-rails"
-    gem "twitter-bootstrap-rails" # rails g bootstrap:install
+    gem "twitter-bootstrap-rails"
 
-Views
-  Articles
-  Layouts
-  Partials
+####	Views
+
+  	Articles
+  	Layouts
+  	Partials
+
