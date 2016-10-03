@@ -8,7 +8,7 @@
       <th>Title</th>
       <th>Body</th>
       <th>Created at</th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+      <th class='actions'>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -17,19 +17,15 @@
         <td><%= link_to article.id, article_path(article) %></td>
         <td><%= article.title %></td>
         <td><%= article.body %></td>
-        <td><%=l article.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_article_path(article), :class => 'btn btn-default btn-xs' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      article_path(article),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-xs btn-danger' %>
+        <td><%= l article.created_at %></td>
+        <td><%= link_to 'Show', article, class: "btn btn-default btn-xs" %>
+            <%= link_to 'Edit', edit_article_path(article), class: "btn btn-default btn-xs" %>
+            <%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' }, 
+                      class: "btn btn-xs btn-danger" %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")), new_article_path, :class => 'btn btn-primary' %>
+<%= link_to 'New', new_article_path, class: 'btn btn-primary' %>
